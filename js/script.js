@@ -175,6 +175,6 @@ const loop = setInterval(() => {
     
 }, 10)
 
-document.addEventListener('keydown','touchscreen',jump);
+document.addEventListener('keydown','click',jump);
 
 inicio();
