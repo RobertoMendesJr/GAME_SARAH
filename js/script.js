@@ -175,6 +175,6 @@ const loop = setInterval(() => {
     
 }, 10)
 
-document.addEventListener('keydown','click',jump);
+document.addEventListener('keydown',jump);
 
 inicio();
