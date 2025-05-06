@@ -178,7 +178,7 @@ const loop = setInterval(() => {
 document.addEventListener('keydown',jump);
 
 
-document.getElementById('botao').addEventListener('touchstart', function(e) {
+document.addEventListener('touchstart', function(e) {
   e.preventDefault(); // evita duplo clique em alguns navegadores
   jump();
 });
