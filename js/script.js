@@ -175,6 +175,11 @@ const loop = setInterval(() => {
     
 }, 10)
 
-document.addEventListener('keydown','click',jump);
+document.addEventListener('keydown',jump);
+
+document.getElementById('botao').addEventListener('touchstart', function(e) {
+  e.preventDefault(); // evita duplo clique em alguns navegadores
+  jump();
+});
 
 inicio();
