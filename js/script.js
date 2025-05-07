@@ -131,11 +131,11 @@ const loop = setInterval(() => {
     if(!endGame){
     const obstaculo1Position = (obstaculo1.offsetLeft/window.innerWidth)*100;
     const obstaculoPosition = (obstaculo.offsetLeft/window.innerWidth)*100;
-    var sarahPosition = (+window.getComputedStyle(sarah).bottom.replace('px','')/window.innerHeight)*100;
+    var sarahPosition = (+window.getComputedStyle(sarah).bottom.replace('px','')/window.innerWidth)*100;
     var bibliaPosition = (biblia.offsetLeft/window.innerWidth)*100;
     textoGameover = "GAME OVER"
     
-     if(obstaculo1Position <= 10 && obstaculo1Position > 0  && sarahPosition <12 || obstaculoPosition <=10 && obstaculoPosition > 0 && sarahPosition <12)
+     if(obstaculo1Position <= 10 && obstaculo1Position > 0  && sarahPosition <9 || obstaculoPosition <=10 && obstaculoPosition > 0 && sarahPosition <9)
         {
         document.removeEventListener('keydown',jump);
         somJump.pause();
